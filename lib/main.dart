@@ -30,6 +30,7 @@ void main() {
                 endIndent: 150,
               ),
               Container(
+                margin: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                 decoration: new BoxDecoration(color: Colors.white),
                 child: Row(
                   children: [
@@ -39,7 +40,7 @@ void main() {
                       size: 30.0,
                     ),
                     Text(
-                      "     0692 404 804",
+                      "   0692 404 804",
                       style: TextStyle(
                         color: Colors.teal,
                         letterSpacing: 2.5,
@@ -52,6 +53,7 @@ void main() {
                 ),
               ),
               Container(
+                margin: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                 decoration: new BoxDecoration(color: Colors.white),
                 child: Row(
                   children: [
@@ -61,7 +63,7 @@ void main() {
                       size: 30.0,
                     ),
                     Text(
-                      "     jullien.patrick@gmail.com",
+                      "   jullien.patrick@gmail.com",
                       style: TextStyle(
                         color: Colors.teal,
                         letterSpacing: 2.5,
