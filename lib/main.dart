@@ -8,17 +8,12 @@ void main() {
         body: SafeArea(
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                  margin: EdgeInsets.all(20),
-                  width: 200,
-                  height: 200,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    image: DecorationImage(
-                        image: AssetImage("images/Ryl-avatar-01A.jpg"),
-                        fit: BoxFit.fill),
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage("images/Ryl-avatar-01A.jpg"),
+                    radius: 100,
                   ),
                 ),
                 Container(
