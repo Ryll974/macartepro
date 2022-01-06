@@ -8,7 +8,7 @@ void main() {
         body: SafeArea(
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   margin: EdgeInsets.all(20),
@@ -40,17 +40,44 @@ void main() {
                   endIndent: 150,
                 ),
                 Container(
+                  decoration: new BoxDecoration(
+                      color: Colors.white
+                  ),
                   child: Row(
                     children: [
                       Icon(
-                        Icons.audiotrack,
-                        color: Colors.black,
+                        Icons.phone,
+                        color: Colors.teal,
                         size: 30.0,
                       ),
                       Text(
-                        "0692 404 804",
+                        "     0692 404 804",
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.teal,
+                          letterSpacing: 2.5,
+                          fontSize: 30.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'SourceSansPro',
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  decoration: new BoxDecoration(
+                      color: Colors.white
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.mail,
+                        color: Colors.teal,
+                        size: 30.0,
+                      ),
+                      Text(
+                        "     jullien.patrick@gmail.com",
+                        style: TextStyle(
+                          color: Colors.teal,
                           letterSpacing: 2.5,
                           fontSize: 30.0,
                           fontWeight: FontWeight.bold,
