@@ -31,7 +31,7 @@ void main() {
               ),
               Container(
                 margin: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                decoration: new BoxDecoration(color: Colors.white),
+                decoration: new BoxDecoration(color: Colors.white,borderRadius: BorderRadius.all(Radius.circular(8))),
                 child: Row(
                   children: [
                     Icon(
@@ -54,7 +54,7 @@ void main() {
               ),
               Container(
                 margin: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                decoration: new BoxDecoration(color: Colors.white),
+                decoration: new BoxDecoration(color: Colors.white,borderRadius: BorderRadius.all(Radius.circular(8))),
                 child: Row(
                   children: [
                     Icon(
