@@ -10,9 +10,21 @@ void main() {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
+              Container(
+                margin: EdgeInsets.all(20),
+                width: 200,
+                height: 200,
+                decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: AssetImage("images/Ryl-avatar-01A.jpg"),
+                  fit: BoxFit.fill
+                  ),
+                ),
+              ),
                 Container(
                   child: Text(
-                    "je suis écrit en Pacifico",
+                    "Patrick J",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 30.0,
@@ -23,7 +35,7 @@ void main() {
                 ),
                 Container(
                   child: Text(
-                    "je suis écrit en Source Sans Pro",
+                    "0692 404 804",
                     style: TextStyle(
                       color: Colors.teal.shade100,
                       letterSpacing: 2.5,
