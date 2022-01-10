@@ -7,7 +7,7 @@ void main() {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 backgroundImage: AssetImage("images/Ryl-avatar-01A.jpg"),
@@ -22,57 +22,64 @@ void main() {
                   fontFamily: 'Pacifico',
                 ),
               ),
-              Divider(
-                color: Colors.teal.shade300,
-                height: 50,
-                thickness: 3,
-                indent: 150,
-                endIndent: 150,
-              ),
-              Container(
-                margin: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                decoration: new BoxDecoration(color: Colors.white,borderRadius: BorderRadius.all(Radius.circular(8))),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                      size: 30.0,
-                    ),
-                    Text(
-                      "   0692 404 804",
-                      style: TextStyle(
-                        color: Colors.teal,
-                        letterSpacing: 2.5,
-                        fontSize: 30.0,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'SourceSansPro',
-                      ),
-                    ),
-                  ],
+              SizedBox(
+                width: 200,
+                child: Divider(
+                  color: Colors.teal.shade300,
+                  height: 50,
+                  thickness: 3,
                 ),
               ),
-              Container(
-                margin: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                decoration: new BoxDecoration(color: Colors.white,borderRadius: BorderRadius.all(Radius.circular(8))),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail,
-                      color: Colors.teal,
-                      size: 30.0,
-                    ),
-                    Text(
-                      "   jullien.patrick@gmail.com",
-                      style: TextStyle(
+              SizedBox(
+                width: 500,
+                child: Container(
+                  margin: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                  decoration: new BoxDecoration(color: Colors.white,borderRadius: BorderRadius.all(Radius.circular(8))),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.phone,
                         color: Colors.teal,
-                        letterSpacing: 2.5,
-                        fontSize: 30.0,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'SourceSansPro',
+                        size: 30.0,
                       ),
-                    ),
-                  ],
+                      Text(
+                        "   0692 404 804",
+                        style: TextStyle(
+                          color: Colors.teal,
+                          letterSpacing: 2.5,
+                          fontSize: 30.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'SourceSansPro',
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 500,
+                child: Container(
+                  margin: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                  decoration: new BoxDecoration(color: Colors.white,borderRadius: BorderRadius.all(Radius.circular(8))),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.mail,
+                        color: Colors.teal,
+                        size: 30.0,
+                      ),
+                      Text(
+                        "   jullien.patrick@gmail.com",
+                        style: TextStyle(
+                          color: Colors.teal,
+                          letterSpacing: 2.5,
+                          fontSize: 30.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'SourceSansPro',
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
